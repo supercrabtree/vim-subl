@@ -13,14 +13,14 @@ attempts to find the project root and also open that.
 
 COMMANDS                                        *subl-commands*
 
-                                                *subl-:Subl*
+                                                *:Subl*
 :Subl                   Opens your current buffer in sublime text, trying to
                         sensibly open your project as well. Looks to see if
                         the file is in a git repository and if it is loads
                         this as the project root. Otherwise it uses the files
                         parent directory as the project root.
 
-                                                *subl-:Subl!*
+                                                *:Subl!*
 
 :Subl!                  Like |:Subl| except it runs on all of your currently
                         open buffers.
