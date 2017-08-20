@@ -14,15 +14,11 @@ attempts to find the project root and also open that.
 COMMANDS                                        *subl-commands*
 
                                                 *:Subl*
-:Subl                   Opens your current buffer in sublime text, trying to
+:Subl[!]                Opens your current buffer in sublime text, trying to
                         sensibly open your project as well. Looks to see if
                         the file is in a git repository and if it is loads
                         this as the project root. Otherwise it uses the files
                         parent directory as the project root.
-
-                                                *:Subl!*
-
-:Subl!                  Like |:Subl| except it runs on all of your currently
-                        open buffers.
+                        With the [!] it opens all buffers in sublime.
 
  vim:tw=78:et:ft=help:norl:
