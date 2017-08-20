@@ -1,0 +1,28 @@
+*subl.txt*
+
+Author:  George Crabtree <http://supercrabtree.github.io/>
+License: Same terms as Vim itself (see |license|)
+
+This plugin is only available if the `subl` command exists. See
+http://www.sublimetext.com/docs/3/osx_command_line.html for more details.
+
+INTRODUCTION                                    *subl*
+
+Adds a simple command to open all your current vim buffers in sublime text and
+attempts to find the project root and also open that.
+
+COMMANDS                                        *subl-commands*
+
+                                                *subl-:Subl*
+:Subl                   Opens your current buffer in sublime text, trying to
+                        sensibly open your project as well. Looks to see if
+                        the file is in a git repository and if it is loads
+                        this as the project root. Otherwise it uses the files
+                        parent directory as the project root.
+
+                                                *subl-:Subl!*
+
+:Subl!                  Like |:Subl| except it runs on all of your currently
+                        open buffers.
+
+ vim:tw=78:et:ft=help:norl:
